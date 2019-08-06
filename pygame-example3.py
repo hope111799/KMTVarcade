@@ -20,7 +20,7 @@ pygame.display.set_caption("StArcade")
 running = True
 
 clock = pygame.time.Clock()
-background_image = pygame.image.load("Red Arcade Machine.gif")
+background_image = pygame.image.load("Red_Arcade_Machine.gif")
 
 
 while( running ):
