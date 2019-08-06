@@ -1,3 +1,10 @@
+# ----------------------Attribution Started---------------------------
+# Code created by hbokmann
+# Uploaded from Pacman Repository: http://hbokmann.github.com/Pacman/
+# 
+# Minor changes made to images used
+# -----------------------Attribution Closed--------------------------
+
 #Pacman in Python with PyGame
 #https://github.com/hbokmann/Pacman
   
@@ -11,7 +18,7 @@ red = (255,0,0)
 purple = (255,0,255)
 yellow   = ( 255, 255,   0)
 
-Trollicon=pygame.image.load('images/Trollman.png')
+Trollicon=pygame.image.load('images/Trollman.png') #Needs to be changed to a Pacman image
 pygame.display.set_icon(Trollicon)
 
 #Add music
