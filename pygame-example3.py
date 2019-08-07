@@ -32,8 +32,16 @@ while( running ):
     screen.blit(background_image, [0, 0])
    
     
-
+    red= (255,0,0)
+    spinner= pygame.draw.circle(screen, red, (350, 150), 60)
     pygame.display.flip()
-    clock.tick(clock_tick_rate)
+
+    blue= (3,198,252)
+    space= pygame.draw.circle(screen, blue, (550, 150), 60)
+    pygame.display.flip()
+
+    yellow= (252,248,3)
+    pacman= pygame.draw.circle(screen, yellow, (440, 300), 60)
+    pygame.display.flip()
 
 pygame.quit()
