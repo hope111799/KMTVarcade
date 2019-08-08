@@ -1,5 +1,6 @@
 # import pygame
 import pygame
+import math
 
 # initialize game engine
 pygame.init()
@@ -30,18 +31,40 @@ while( running ):
 
     # Refresh the background image
     screen.blit(background_image, [0, 0])
-   
+
+   #Creates the buttons
     
     red= (255,0,0)
-    spinner= pygame.draw.circle(screen, red, (350, 150), 60)
+    box1= (320,150,80,80)
+    pygame.draw.rect(screen, red, box1)
     pygame.display.flip()
 
     blue= (3,198,252)
-    space= pygame.draw.circle(screen, blue, (550, 150), 60)
+    box2= (500, 150, 80, 80)
+    pygame.draw.rect(screen, blue, box2)
     pygame.display.flip()
 
     yellow= (252,248,3)
-    pacman= pygame.draw.circle(screen, yellow, (440, 300), 60)
+    box3= (410, 300, 80, 80)
+    pygame.draw.rect(screen, yellow,box3)
     pygame.display.flip()
+
+###creating the buttons to redirect
+##
+##clicked= win.checkMouse()
+##radius= 60
+##Bluemouse_position= win.getMouse() 
+##Redmouse_position= 
+##Yellowmouse_position=
+##
+###Blue button redirect
+##if Bluemouse_position == < radius: 
+##
+###Red button redirect
+##
+###Yellow button redirect
+    
+    
+
 
 pygame.quit()
