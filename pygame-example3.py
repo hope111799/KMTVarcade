@@ -1,6 +1,7 @@
 # import pygame
 import pygame
 import math
+import pacman
 
 # initialize game engine
 pygame.init()
@@ -49,7 +50,7 @@ while( running ):
     pygame.draw.rect(screen, yellow,box3)
     pygame.display.flip()
 
-###creating the buttons to redirect
+##creating the buttons to redirect
 ##
 ##clicked= win.checkMouse()
 ##radius= 60
@@ -57,13 +58,13 @@ while( running ):
 ##Redmouse_position= 
 ##Yellowmouse_position=
 ##
-###Blue button redirect
+##Blue button redirect
 ##if Bluemouse_position == < radius: 
 ##
-###Red button redirect
+##Red button redirect
 ##
-###Yellow button redirect
-    
+##Yellow button redirect
+##    
     
 
 
