@@ -1,19 +1,46 @@
+#___________________________________________________
+##    Names: Vic, Mignote, Kemi, Tiffany
+##    Date: August 9 2019
+##    Description: An arcade with severalgames to play
+
+##    Thank you Jordan, Denelis, Khan and Sam for help!
+#___________________________________________________
+
+
+
+
+
+
+
+
+
+
+
 # import pygame
+##import pygame
+##import math
+##from pygame import mixer
+
 import pygame
-import math
+
 
 # initialize game engine
 pygame.init()
 
+#create window
 window_width=900
 window_height=594
 
 animation_increment=10
 clock_tick_rate=20
 
-# Open a window
+# Open a window with music playing
 size = (window_width, window_height)
 screen = pygame.display.set_mode(size)
+pygame.mixer.init() 
+pygame.mixer.music.load("rick.MP3")
+pygame.mixer.music.play(1)
+
 
 # Set title to the window
 pygame.display.set_caption("StArcade")
@@ -36,7 +63,9 @@ class Background (pygame.sprite.Sprite):
 background=Background()
 characters=pygame.sprite.Group(background)
 characters.draw(screen)
+
 pygame.display.update()
+
 
 black = (0,0,0)
 white = (255,255,255)
